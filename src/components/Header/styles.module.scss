@@ -1,0 +1,94 @@
+.headerContainer {
+  background: #181818;
+  padding: 1rem 0;
+
+  section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    div,
+    a {
+      display: flex;
+      align-items: center;
+    }
+
+    p {
+      color: var(--purple);
+      font-size: 2rem;
+      margin-left: 1rem;
+    }
+    button {
+      display: flex;
+      align-items: center;
+
+      span {
+        background: var(--purple);
+        color: var(--gray-100);
+        border-radius: 8px;
+
+        margin-right: 0.5rem;
+        padding: 0.5rem;
+
+        font-size: 0.875rem;
+        padding: 0.3rem 0.5rem;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 0.875rem;
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+
+    a {
+      p {
+        font-size: 1rem;
+        margin-left: 0.5rem;
+      }
+    }
+  }
+}
+
+.scrollClass {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 10;
+}
+
+.cartAnimation {
+  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s; /* Change to speed up or slow down */
+  animation-iteration-count: infinite; /* Never stop waving :) */
+  transform-origin: 80% 80%; /* Pivot around the bottom-left palm */
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(4deg);
+  } /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-4deg);
+  }
+  30% {
+    transform: rotate(4deg);
+  }
+  40% {
+    transform: rotate(-2deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
+}
