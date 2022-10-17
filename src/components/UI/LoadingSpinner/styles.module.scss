@@ -1,0 +1,27 @@
+.spinnerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: auto;
+
+  padding: 1rem 0;
+}
+
+.loadingSpinner {
+  width: 35px;
+  height: 35px;
+  border: 6px solid var(--purple);
+  border-top: 6px solid var(--gray-800); 
+  border-radius: 50%;
+  animation: spinner 0.6s linear infinite;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
