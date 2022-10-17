@@ -42,6 +42,7 @@ Template Writed on Create Next App with Typescript as a PWA
 - [x] <b>[Axios](https://www.npmjs.com/package/axios):</b> <i>Promise based HTTP client for the browser and node.js </i>
 - [x] <b>[SASS](https://www.npmjs.com/package/sass):</b> <i>Sass is the most mature, stable, and powerful professional grade CSS extension language in the world. </i>
 - [x] <b>[Testing Library](https://www.npmjs.com/package/@testing-library/react):</b> <i>Powerful Testing Library</i>
+- [x] <b>[React Loading Skeleton](https://www.npmjs.com/package/react-loading-skeleton):</b> <i>Make beautiful, animated loading skeletons that automatically adapt to your app.</i>
 
 # :black_nib: Getting Started
 
