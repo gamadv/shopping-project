@@ -11,10 +11,12 @@ const nextConfig = {
   compiler: {
     removeConsole: process.env.NODE_ENV !== "development",
   },
+  images: {
+    domains: ["toppng.com"],
+  },
 };
 
 module.exports = () => {
-
   const plugins = [withPWA];
   const config = plugins.reduce((acc, next) => next(acc), {
     ...nextConfig,
