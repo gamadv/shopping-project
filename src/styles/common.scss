@@ -1,0 +1,39 @@
+.contentContainer {
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
+  max-width: 1300px;
+  margin-inline: auto;
+}
+
+#quantitySelector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+
+  margin-left: auto;
+
+  gap: 0.5rem;
+  padding: 0.7rem 0;
+
+  max-width: 350px;
+  max-height: 60px;
+
+  button {
+    color: var(--gray-100);
+    font-weight: bold;
+  }
+
+  span {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--purple);
+  }
+
+  @media screen and (max-width: 767px) {
+    max-width: 250px;
+    margin-left: 0;
+  }
+}
