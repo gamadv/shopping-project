@@ -1,0 +1,33 @@
+.productListContainer {
+  margin-top: 1.5rem;
+
+  div ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 767px) {
+      justify-content: center;
+    }
+  }
+}
+
+.SkeletonListItem {
+
+  border-radius: 8px;
+
+  margin: 2rem 0;
+
+  cursor: pointer;
+}
+
+.SkeletonArticle {
+  display: flex;
+  align-items: center;
+
+  height: 100%;
+  min-height: 54px;
+  max-height: 54px;
+
+  gap: 0.875rem;
+}
