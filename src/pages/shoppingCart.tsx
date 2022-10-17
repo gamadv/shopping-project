@@ -10,7 +10,7 @@ import { postOrder } from "../services/data/product-endpoint";
 import styles from "../styles/shoppingCart.module.scss";
 
 export default function ShoppingCart() {
-  const { push } = useRouter();
+  // const { push } = useRouter();
   const { cartData, cartTotalValue } = useCart();
   const [isLoading, setIsLoading] = useState(false);
 
@@ -29,7 +29,7 @@ export default function ShoppingCart() {
     console.log(order, data);
 
     setTimeout(() => {
-      push('/orderConfirmation')
+      // push('/orderConfirmation')
       setIsLoading(false);
     }, 2000);
   }
@@ -56,7 +56,7 @@ export default function ShoppingCart() {
               <footer>
                 <div>
                   <p>Total</p>
-                  <span>{cartTotalValue}</span>
+                  <span data-testid={`totalCart`}>{cartTotalValue}</span>
                 </div>
                 {isLoading ? (
                   <LoadingSpinner />

@@ -24,7 +24,7 @@ export function ProductItem({
   const router = useRouter();
   const { cartData, handleChangeQuantity } = useCart();
   const { id, name, price, imageUrl, quantity } = product;
-  const { productListItemContainer } = styles;
+  const { productListItemContainer, totalContainer } = styles;
 
   const productValue = isCartPage
     ? convertToCurrency(price * quantity, "BRL")
@@ -45,11 +45,12 @@ export function ProductItem({
     id: number
   ) {
     event.preventDefault();
-    router.push(`/productDetail/${id}`);
+    router.push(`/productDetail`);
   }
 
   return (
     <li
+      data-testid={`product`}
       className={productListItemContainer}
       onClick={(event) => handlePageToProductDetail(event, id)}
     >
@@ -62,7 +63,7 @@ export function ProductItem({
         />
         <div>
           <p>{name}</p>
-          <span>{productValue}</span>
+          <span data-testid={`price`}>P.Unit - {convertToCurrency(price)}</span>
         </div>
         {hasQuantitySelector && (
           <div id="quantitySelector">
@@ -71,12 +72,17 @@ export function ProductItem({
             >
               <BisMinusSquare size={34} color="#8758ff" />
             </button>
-            <span>{productQuantityUpdate}</span>
+            <span data-testid={`pquantity`}>{productQuantityUpdate}</span>
             <button
               onClick={(event) => handleChangeQuantity(event, id, "Plus")}
             >
               <BisPlusSquare size={34} color="#8758ff" />
             </button>
+          </div>
+        )}
+        {quantity > 0 && (
+          <div data-testid={`ptotal`} className={totalContainer}>
+            <p>Total</p> {productValue}
           </div>
         )}
       </article>

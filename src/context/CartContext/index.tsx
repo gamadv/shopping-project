@@ -30,7 +30,7 @@ interface ICartContext {
   children?: ReactNode;
 }
 
-const CartContext = createContext({} as ICartContext);
+export const CartContext = createContext({} as ICartContext);
 
 export function CartProvider({ children }) {
   const router = useRouter();
