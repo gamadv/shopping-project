@@ -1,6 +1,6 @@
+
 <h1 align=center>
-  <img src="https://ui-lib.com/blog/wp-content/uploads/2021/12/nextjs-boilerplate-logo.png" width=35 height=35 />
-  PWA Next JS Template With TypeScript  
+  <img src="https://user-images.githubusercontent.com/47481125/196264552-114b1691-0745-4e30-8114-41a8475ed004.png"  />
 </h1>
 
 <div align="center" style="margin-top: 30px;">  
@@ -29,7 +29,10 @@
 
 # :notebook: About
 
-Template Writed on Create Next App with Typescript as a PWA
+This project was mande on Template Writed on Create Next App with Typescript as a PWA
+
+PWA can be installed with clicking in this icon on browser: ![image](https://user-images.githubusercontent.com/47481125/196265019-91c9df36-041e-4ce1-b574-e48a80cedcac.png)
+
 
 # :hammer: Technologies
 
@@ -97,6 +100,13 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+# :heavy_plus_sign: Upgrades:
+
+Some features are available to upgrade this app, those are:
+
+- [ ] Fix some points Responsive Layout;
+- [ ] Look out on Jest configuration on Next, to improve best config
 
 <p align=center> 
   <h6 align=center>💙 Made by 💙</h6> 
